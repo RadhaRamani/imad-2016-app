@@ -22,7 +22,7 @@ var articles={
     content:`This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page.`
     }
 };
-/*    
+   
 function createtemplate(data) {
     var heading=data.heading;
     var content=data.content;
@@ -53,7 +53,7 @@ var htmltemplate=`<html>
 </html>
 `;
 return htmltemplate;
-}*/
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
