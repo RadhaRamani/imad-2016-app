@@ -12,7 +12,7 @@ img.onClick=function(){
     
    var interval=setInterval(moveRight,50);
 };*/
-var counter=0;
+
 var button=document.getElementById("counter");
 button.onClick =function()
 {
@@ -24,8 +24,8 @@ button.onClick =function()
           if(request.status==200)
           {
               var counter=request.responseText;
-              var span=document.getElementById("count");
-                span.innerHTML=counter.toString();
+              var span=document.getElementById('count');
+              span.innerHTML=counter.toString();
           }
       }
     };
