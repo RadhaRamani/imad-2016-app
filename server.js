@@ -25,7 +25,7 @@ var articles={
     
 function createtemplate(data){
     var heading=data.heading;
-    var conent=data.content;
+    var content=data.content;
     var title=data.title;
 
 var htmltemplate=`<html>
