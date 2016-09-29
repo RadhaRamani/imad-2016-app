@@ -12,12 +12,12 @@ var articles={
     content:`This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page.`
     },
     'article-two':{
-    title:'ArticleOne',
+    title:'ArticleTwo',
     heading:'Hello',
     content:`This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page.`
     },
     'article-three':{
-    title:'ArticleOne',
+    title:'ArticleThree',
     heading:'Hello',
     content:`This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page. This is the content of this page.`
     }
@@ -50,13 +50,14 @@ var htmltemplate=`<html>
     
 
 
-</html>
-`;
+</html>`;
+
 return htmltemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
 var counter=0;
 app.get('/counter',function(req,res){
     counter=counter+1;
