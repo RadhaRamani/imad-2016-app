@@ -40,7 +40,7 @@ button.onClick =function()
     {
         
         var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
+        request.onreadystatechange=function(){
       
       if(request.readyState==XMLHttpRequest.DONE)  
       {
@@ -52,14 +52,14 @@ button.onClick =function()
                 {
                     list+='<li>'+names[i]+'</li>'
                 }
-            var nameInput=document.getElementById("name");
-            var name=nameInput.value;
+            
             var ul=document.getElementById("nameList");
             ul.innerHTML=list;
           }
       }
     };
-    
-    request.open('GET','http://radharamani.imad.hasura-app.io/submit-name',true);
+    var nameInput=document.getElementById("name");
+    var name=nameInput.value;
+    request.open('GET','http://radharamani.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
 };
