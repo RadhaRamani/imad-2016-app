@@ -29,10 +29,11 @@ button.onClick =function()
           }
       }
     };
+    
     request.open('GET','http://radharamani.imad.hasura-app.io/counter',true);
     request.send(null);
     
-   
+};
    
     var submit=document.getElementById("submit_btn");
     submit.onClick=function()
@@ -43,9 +44,8 @@ button.onClick =function()
         {
             list+='<li>'+names[i]+'</li>'
         }
-         var nameInput=document.getElementById("name");
+        var nameInput=document.getElementById("name");
         var name=nameInput.value;
         var ul=document.getElementById("nameList");
         ul.innerHTML=list;
     };
-};
