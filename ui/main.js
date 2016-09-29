@@ -1,17 +1,4 @@
-/*console.log('Loaded!');
-var element=document.getElementById('main-text');
-element.innerHTML="WOW!!!";
-var img=document.getElementById("madi");
-var marginLeft=0;
-function moveRight()
-{
-    marginLeft=marginLeft+5;
-    img.style.marginLeft=marginLeft+'px';
-}
-img.onClick=function(){
-    
-   var interval=setInterval(moveRight,50);
-};*/
+
 
 var button=document.getElementById("counter");
 button.onClick =function()
@@ -51,7 +38,7 @@ button.onClick =function()
              var list='';
              for(var i=0;i<names.length;i++)
                 {
-                    list+='<li>'+names[i]+'</li>'
+                    list+='<li>'+ names[i] +'</li>';
                 }
             
             var ul=document.getElementById("nameList");
