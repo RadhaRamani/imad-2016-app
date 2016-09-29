@@ -1,6 +1,6 @@
 
 
-var button=document.getElementById("counter");
+var button=document.getElementById('counter');
 button.onClick =function()
 {
     var request=new XMLHttpRequest();
@@ -11,7 +11,7 @@ button.onClick =function()
           if(request.status==200)
           {
               var counter=request.responseText;
-              var span=document.getElementById("count");
+              var span=document.getElementById('count');
               span.innerHTML=counter.toString();
           }
       }
@@ -22,7 +22,7 @@ button.onClick =function()
     
 };
    
-    var submit=document.getElementById("submit_btn");
+    var submit=document.getElementById('submit_btn');
     submit.onClick=function()
     {
         
@@ -41,7 +41,7 @@ button.onClick =function()
                     list+='<li>'+ names[i] +'</li>';
                 }
             
-            var ul=document.getElementById("nameList");
+            var ul=document.getElementById('nameList');
             ul.innerHTML=list;
           }
       }
